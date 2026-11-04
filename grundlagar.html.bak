@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grundlagar – Res Publica Foederata Teutoniae">
+    <title>Grundlagar | Res Publica Foederata Teutoniae</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/teutonia-pages.css">
+</head>
+<body class="tn-body tn-statsordningen">
+
+<header class="tn-header">
+    <div class="tn-header-inner">
+        <a class="tn-brand" href="index.html">
+            <span class="tn-brand-mark">T</span>
+            <span class="tn-brand-text">
+                <strong>TEUTONIA</strong>
+                <small>RES PUBLICA FOEDERATA</small>
+            </span>
+        </a>
+
+        <nav class="tn-main-nav" aria-label="Huvudnavigation">
+            <a href="index.html" class="">Startsida</a>
+            <a href="landet.html" class="">Landet</a>
+            <a href="statsordning.html" class="active">Statsordningen</a>
+        </nav>
+    </div>
+</header>
+
+
+<nav class="tn-section-nav tn-section-nav--formal" aria-label="Statsordningen">
+    <a href="statsordning.html" class="">Översikt</a>
+    <a href="grundlagar.html" class="active">Grundlagar</a>
+    <a href="lagstiftning.html" class="">Lagstiftning</a>
+    <a href="institutioner.html" class="">Institutioner</a>
+</nav>
+
+<main class="tn-main">
+<section id="codex-download" class="tn-codex-section">
+    <div class="tn-codex-content">
+        <p class="tn-section-eyebrow">Officiellt rättsligt dokument</p>
+        <h2>Codex Teutoniae</h2>
+
+        <p>
+            Den fullständiga lagsamlingen för
+            Res Publica Foederata Teutoniae återfinns i
+            Codex Teutoniae. Dokumentet innehåller landets
+            grundläggande rättsordning och övriga centrala
+            lagbestämmelser.
+        </p>
+
+        <a
+            class="tn-codex-link"
+            href="assets/documents/Codex%20Teutoniae.pdf"
+            target="_blank"
+            rel="noopener"
+        >
+            Läs Codex Teutoniae (PDF)
+        </a>
+    </div>
+</section>
+
+    <div class="tn-breadcrumb">
+        <a href="index.html">Startsida</a>
+        <span>/</span>
+        <a href="statsordning.html">Statsordningen</a> <span>/</span> Grundlagar
+    </div>
+
+    <header class="tn-page-hero tn-formal-hero tn-page-hero--compact">
+    <p class="tn-eyebrow">DEN KONSTITUTIONELLA GRUNDEN</p>
+    <h1>Grundlagarna</h1>
+    <p class="tn-lead">
+        Republikens grundlagar fastställer statsskickets principer,
+        skyddar människans fri- och rättigheter och reglerar den
+        offentliga maktens organisation.
+    </p>
+</header>
+
+<section class="tn-prose-grid">
+    <div>
+        <p class="tn-eyebrow">HÖGSTA RÄTTSLIGA NIVÅ</p>
+        <h2>Grundlagen sätter gränsen för makten.</h2>
+    </div>
+    <div class="tn-prose">
+        <p>
+            Teutonias grundlagar utgör den konstitutionella ramen för
+            hela den offentliga verksamheten. Vanlig lag, förordningar
+            och myndighetsföreskrifter måste vara förenliga med
+            grundlagarna.
+        </p>
+        <p>
+            Grundlagarna reglerar bland annat hur den nationella
+            lagstiftande församlingen är sammansatt, hur den verkställande
+            makten organiseras, hur domstolarna arbetar och hur
+            rättigheterna skyddas.
+        </p>
+        <p>
+            De fastställer även förhållandet mellan förbundet och
+            delstaterna samt de regler som gäller för offentlig ekonomi,
+            försvar, förvaltning och extraordinära situationer.
+        </p>
+    </div>
+</section>
+
+<section class="tn-law-list">
+    <p class="tn-eyebrow">GRUNDLAGARNAS OMRÅDEN</p>
+    <h2>En sammanhängande konstitutionell ordning.</h2>
+
+    <article>
+        <span>01</span>
+        <div>
+            <h3>Regeringsgrundlagen</h3>
+            <p>
+                Reglerar statsskickets grunder, Folkförsamlingen,
+                Statsledaren, regeringen och den offentliga maktens
+                organisation.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>02</span>
+        <div>
+            <h3>Rättighetsgrundlagen</h3>
+            <p>
+                Skyddar grundläggande fri- och rättigheter, människans
+                värdighet, rättssäkerheten och individens skydd mot
+                offentlig maktutövning.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>03</span>
+        <div>
+            <h3>Domstolsgrundlagen</h3>
+            <p>
+                Fastställer domstolsväsendets uppbyggnad, domarnas
+                oberoende och formerna för rättslig kontroll.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>04</span>
+        <div>
+            <h3>Val- och folkstyrelsegrundlagen</h3>
+            <p>
+                Reglerar folkstyrelsens grund, valens administration,
+                politiskt deltagande och rättslig prövning av val.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>05</span>
+        <div>
+            <h3>Förbundsgrundlagen</h3>
+            <p>
+                Reglerar förbundsstatens struktur, delstaternas
+                självstyre och fördelningen av offentlig makt mellan
+                förbundet och delstaterna.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>06</span>
+        <div>
+            <h3>Lagstiftnings- och normgivningsgrundlagen</h3>
+            <p>
+                Fastställer normhierarkin och reglerna för lagstiftning,
+                delegerad normgivning, offentliggörande och tillämpning.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>07</span>
+        <div>
+            <h3>Finans- och budgetgrundlagen</h3>
+            <p>
+                Reglerar offentlig ekonomi, beskattning, statsbudget,
+                upplåning, ekonomisk redovisning och granskning.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>08</span>
+        <div>
+            <h3>Försvars- och säkerhetsgrundlagen</h3>
+            <p>
+                Fastställer försvarets uppgift och ställning samt
+                reglerna för säkerhetsverksamhet och demokratisk kontroll.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>09</span>
+        <div>
+            <h3>Undantagstillståndsgrundlagen</h3>
+            <p>
+                Reglerar konstitutionella nödlägen, tillfälliga
+                extraordinära befogenheter och skyddet för rättsstaten
+                under kriser.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>10</span>
+        <div>
+            <h3>Förvaltningsgrundlagen</h3>
+            <p>
+                Reglerar den offentliga förvaltningens principer,
+                organisation, handläggning, insyn och ansvar.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <span>11</span>
+        <div>
+            <h3>Kommun- och självstyrelsegrundlagen</h3>
+            <p>
+                Fastställer den lokala självstyrelsens ställning,
+                kommunal demokrati, ekonomi och rättsliga skydd.
+            </p>
+        </div>
+    </article>
+    
+    <article>
+        <span>12</span>
+        <div>
+            <h3>Internationell rätts- och traktatgrundlagen</h3>
+            <p>
+                Fastställer internationella förpliktelser, traktater,
+                internationella organisationer och förhållandet mellan internationell och nationell rätt.
+            </p>
+        </div>
+    </article>
+</section>
+
+<section class="tn-note tn-note--formal">
+    <strong>Codex Legum</strong>
+    <p>
+        Teutonias grundlagar återges i den officiella lagboken
+        <em>Codex Legum Rei Publicae Foederatae Teutoniae</em>.
+        Lagboken samlar och systematiserar republikens grundläggande
+        rättsregler och övriga författningar.
+    </p>
+</section>
+<!-- CODEX-DOCUMENT-SECTION -->
+<section class="tn-codex-document">
+    <h2>Codex Teutoniae</h2>
+    <p>
+        Teutonias samlade lagverk återfinns i
+        <em>Codex Legum Rei Publicae Foederatae Teutoniae</em>.
+        Här finns republikens grundlagar och övriga centrala rättsregler
+        samlade i ett gemensamt dokument.
+    </p>
+
+    <p>
+        <a href="assets/documents/Codex%20Teutoniae.pdf"
+           target="_blank"
+           rel="noopener">
+            Öppna Codex Teutoniae (PDF)
+        </a>
+    </p>
+
+    <iframe
+        src="assets/documents/Codex%20Teutoniae.pdf"
+        title="Codex Teutoniae"
+        width="100%"
+        height="750"
+        style="border: 1px solid #c5a45a; border-radius: 4px;">
+    </iframe>
+</section>
+</main>
+
+<footer class="tn-footer">
+    <div class="tn-footer-inner">
+        <div>
+            <strong>RES PUBLICA FOEDERATA TEUTONIAE</strong>
+            <p>Lex et Ordo – In Excelsis</p>
+        </div>
+        <div class="tn-footer-links">
+            <a href="landet.html">Landet</a>
+            <a href="statsordning.html">Statsordningen</a>
+            <a href="grundlagar.html">Grundlagar</a>
+        </div>
+        <div class="tn-footer-motto">Ave Imperator</div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+

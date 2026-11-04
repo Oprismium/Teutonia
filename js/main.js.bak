@@ -1,0 +1,65 @@
+﻿document.addEventListener("DOMContentLoaded", () => {
+
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+
+    if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+            const open = nav.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", String(open));
+        });
+    }
+
+    const currentPage = document.body.dataset.page;
+    const currentSection = document.body.dataset.section;
+
+    // Markera aktuell huvudsektion.
+    const mainLinks = document.querySelectorAll(".main-nav a");
+
+    mainLinks.forEach(link => {
+        if (link.dataset.section === currentSection) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+
+    // Flytta den animerade markeringen.
+    const indicator = document.querySelector(".nav-indicator");
+    const activeLink = document.querySelector(".main-nav a.active");
+
+    function moveIndicator() {
+        if (!indicator || !activeLink || window.innerWidth <= 850) return;
+
+        const navRect = nav.getBoundingClientRect();
+        const linkRect = activeLink.getBoundingClientRect();
+
+        indicator.style.width = linkRect.width + "px";
+        indicator.style.transform =
+            `translateX(${linkRect.left - navRect.left}px)`;
+    }
+
+    moveIndicator();
+    window.addEventListener("resize", moveIndicator);
+
+    // Markera aktuell undersida.
+    document.querySelectorAll(".section-nav a").forEach(link => {
+        if (link.dataset.page === currentPage) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+
+    // Animerad positionsindikator i brödsmulan.
+    const progress = document.querySelector(".breadcrumb-progress span");
+
+    if (progress) {
+        const depth = Number(document.body.dataset.depth || 1);
+        progress.style.width = Math.min(depth * 33.33, 100) + "%";
+    }
+
+    // Aktuellt årtal.
+    const year = document.querySelector("#current-year");
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+});

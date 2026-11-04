@@ -1,0 +1,1258 @@
+﻿/* ==========================================================
+   TEUTONIA - CONTENT EDITION I
+   Additional styles for the expanded website pages.
+   ========================================================== */
+
+.tn-body {
+    --tn-green: #172D2A;
+    --tn-ivory: #E9E2D0;
+    --tn-crimson: #A3262A;
+    --tn-gold: #C5A45A;
+    --tn-ink: #202724;
+    --tn-muted: #68716B;
+    --tn-paper: #F1EBDD;
+    --tn-line: rgba(32,39,36,.18);
+    margin: 0;
+    background: var(--tn-paper);
+    color: var(--tn-ink);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.tn-body a {
+    color: inherit;
+}
+
+.tn-header {
+    background: var(--tn-green);
+    color: var(--tn-ivory);
+    position: relative;
+    z-index: 10;
+}
+
+.tn-header-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 20px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.tn-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: var(--tn-ivory);
+}
+
+.tn-brand-mark {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--tn-ivory);
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tn-brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    letter-spacing: .12em;
+}
+
+.tn-brand-text strong {
+    font-size: 15px;
+}
+
+.tn-brand-text small {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: .16em;
+    opacity: .72;
+}
+
+.tn-main-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.tn-main-nav a,
+.tn-section-nav a {
+    position: relative;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.tn-main-nav a {
+    color: var(--tn-ivory);
+    opacity: .78;
+    padding: 12px 0;
+}
+
+.tn-main-nav a:hover,
+.tn-main-nav a.active {
+    opacity: 1;
+}
+
+.tn-main-nav a::after,
+.tn-section-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    height: 1px;
+    background: var(--tn-gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease;
+}
+
+.tn-main-nav a:hover::after,
+.tn-main-nav a.active::after,
+.tn-section-nav a:hover::after,
+.tn-section-nav a.active::after {
+    transform: scaleX(1);
+}
+
+.tn-section-nav {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    padding: 16px 20px;
+    background: #203A35;
+    color: var(--tn-ivory);
+}
+
+.tn-section-nav--formal {
+    background: #E4DCCB;
+    color: var(--tn-green);
+    border-bottom: 1px solid var(--tn-line);
+}
+
+.tn-section-nav a {
+    padding: 7px 0;
+    opacity: .75;
+}
+
+.tn-section-nav a:hover,
+.tn-section-nav a.active {
+    opacity: 1;
+}
+
+.tn-section-nav a::after {
+    bottom: 0;
+}
+
+.tn-main {
+    min-height: 65vh;
+}
+
+.tn-breadcrumb {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 22px 5vw;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: .04em;
+    color: var(--tn-muted);
+}
+
+.tn-breadcrumb a {
+    text-decoration: none;
+}
+
+.tn-breadcrumb a:hover {
+    color: var(--tn-crimson);
+}
+
+.tn-eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: .2em;
+    line-height: 1.6;
+    color: var(--tn-crimson);
+    text-transform: uppercase;
+}
+
+.tn-lead {
+    max-width: 720px;
+    font-size: clamp(18px, 2vw, 23px);
+    line-height: 1.55;
+    font-weight: normal;
+}
+
+.tn-home-hero {
+    min-height: 570px;
+    background:
+        linear-gradient(90deg, rgba(15,34,30,.96), rgba(15,34,30,.77) 48%, rgba(15,34,30,.15)),
+        linear-gradient(0deg, rgba(15,34,30,.2), rgba(15,34,30,.2)),
+        #29443A;
+    color: var(--tn-ivory);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 65px max(7vw, calc((100vw - 1180px)/2));
+    position: relative;
+    overflow: hidden;
+}
+
+.tn-home-hero::after {
+    content: "";
+    position: absolute;
+    width: 42vw;
+    height: 42vw;
+    border: 1px solid rgba(233,226,208,.16);
+    border-radius: 50%;
+    right: -10vw;
+    top: 5%;
+    box-shadow: 0 0 0 45px rgba(233,226,208,.025),
+                0 0 0 90px rgba(233,226,208,.025);
+    pointer-events: none;
+}
+
+.tn-hero-content {
+    max-width: 760px;
+    position: relative;
+    z-index: 1;
+}
+
+.tn-home-hero .tn-eyebrow {
+    color: var(--tn-gold);
+}
+
+.tn-home-hero h1 {
+    max-width: 720px;
+    margin: 20px 0;
+    font-size: clamp(48px, 7vw, 86px);
+    font-weight: normal;
+    line-height: 1.02;
+}
+
+.tn-home-hero .tn-lead {
+    color: rgba(233,226,208,.88);
+}
+
+.tn-hero-caption {
+    position: absolute;
+    bottom: 25px;
+    right: 5vw;
+    z-index: 1;
+    font: 9px Arial, sans-serif;
+    letter-spacing: .2em;
+    color: rgba(233,226,208,.65);
+}
+
+.tn-text-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--tn-crimson);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .04em;
+}
+
+.tn-text-link span {
+    margin-left: 8px;
+    transition: transform .2s ease;
+    display: inline-block;
+}
+
+.tn-text-link:hover span {
+    transform: translateX(5px);
+}
+
+.tn-light-link {
+    color: var(--tn-ivory);
+    border-color: var(--tn-gold);
+}
+
+.tn-intro-grid,
+.tn-prose-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 5vw;
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 9%;
+}
+
+.tn-intro-grid h2,
+.tn-prose-grid h2 {
+    margin: 12px 0;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.12;
+    font-weight: normal;
+}
+
+.tn-prose p,
+.tn-intro-grid p {
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.tn-prose p:first-child {
+    margin-top: 0;
+}
+
+.tn-facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #E6DECC;
+    padding: 34px max(5vw, calc((100vw - 1180px)/2));
+    gap: 25px;
+}
+
+.tn-fact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 1px solid rgba(23,45,42,.25);
+    padding-left: 18px;
+}
+
+.tn-fact-label {
+    font: bold 9px Arial, sans-serif;
+    letter-spacing: .17em;
+    color: var(--tn-crimson);
+}
+
+.tn-fact strong {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.tn-home-sections {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 85px 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.tn-feature {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 40px;
+    text-decoration: none;
+    background: #DDE2D8;
+    transition: transform .25s ease, background .25s ease;
+}
+
+.tn-feature:hover {
+    transform: translateY(-5px);
+    background: #D4DDD2;
+}
+
+.tn-feature--formal {
+    background: #E6DCCB;
+}
+
+.tn-feature--formal:hover {
+    background: #DED2BE;
+}
+
+.tn-feature-number {
+    font: 10px Arial, sans-serif;
+    letter-spacing: .15em;
+    color: var(--tn-crimson);
+}
+
+.tn-feature h2 {
+    margin: 30px 0 10px;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.tn-feature p {
+    max-width: 430px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.tn-feature-link {
+    margin-top: auto;
+    padding-top: 24px;
+    font: 11px Arial, sans-serif;
+    letter-spacing: .06em;
+}
+
+.tn-quote {
+    padding: 85px 8vw;
+    text-align: center;
+    background: var(--tn-green);
+    color: var(--tn-ivory);
+}
+
+.tn-quote p {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    font-size: clamp(24px, 3.5vw, 38px);
+    line-height: 1.45;
+}
+
+.tn-quote span,
+.tn-formal-statement span {
+    font: 9px Arial, sans-serif;
+    letter-spacing: .2em;
+    color: var(--tn-gold);
+}
+
+.tn-quote--small p {
+    font-size: 27px;
+}
+
+.tn-page-hero {
+    padding: 105px max(7vw, calc((100vw - 1180px)/2)) 110px;
+    background: #DCE3D8;
+    color: var(--tn-green);
+}
+
+.tn-land-hero {
+    background:
+        linear-gradient(110deg, #D9E0D5, #E9E2D0);
+}
+
+.tn-page-hero h1 {
+    max-width: 900px;
+    margin: 15px 0;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1.04;
+    font-weight: normal;
+}
+
+.tn-page-hero--compact {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+.tn-page-hero--compact h1 {
+    font-size: clamp(42px, 6vw, 68px);
+}
+
+.tn-editorial-block {
+    padding: 80px max(5vw, calc((100vw - 1180px)/2));
+    background: #E6DECC;
+}
+
+.tn-editorial-block > h2 {
+    margin: 12px 0 45px;
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: normal;
+}
+
+.tn-three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.tn-three-columns article {
+    border-top: 1px solid var(--tn-line);
+    padding-top: 20px;
+}
+
+.tn-column-number {
+    font: 11px Arial, sans-serif;
+    color: var(--tn-crimson);
+    letter-spacing: .1em;
+}
+
+.tn-three-columns h3 {
+    font-size: 23px;
+    font-weight: normal;
+    margin: 22px 0 12px;
+}
+
+.tn-three-columns p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.tn-prose-grid--reverse {
+    background: #F3EDDF;
+}
+
+.tn-next-panel {
+    padding: 75px max(5vw, calc((100vw - 1180px)/2));
+    background: #DCE3D8;
+    display: grid;
+    grid-template-columns: 1fr .7fr;
+    gap: 50px;
+}
+
+.tn-next-panel h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin: 12px 0;
+}
+
+.tn-next-panel p {
+    line-height: 1.7;
+}
+
+.tn-next-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tn-next-links a {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--tn-line);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.tn-next-links span {
+    float: right;
+    color: var(--tn-crimson);
+}
+
+.tn-note {
+    max-width: 1180px;
+    margin: 55px auto;
+    padding: 28px 32px;
+    border-left: 3px solid var(--tn-crimson);
+    background: #E6DECC;
+}
+
+.tn-note strong {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.tn-note p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.tn-timeline {
+    padding: 80px max(5vw, calc((100vw - 1000px)/2));
+    background: #E6DECC;
+}
+
+.tn-timeline > h2 {
+    font-size: 38px;
+    font-weight: normal;
+    margin: 10px 0 45px;
+}
+
+.tn-timeline-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 25px;
+    padding: 28px 0;
+    border-top: 1px solid var(--tn-line);
+}
+
+.tn-timeline-index {
+    font-size: 27px;
+    color: var(--tn-crimson);
+}
+
+.tn-timeline-item h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.tn-timeline-item p {
+    margin: 0;
+    max-width: 700px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.tn-footer {
+    background: var(--tn-green);
+    color: var(--tn-ivory);
+    padding: 40px 5vw;
+}
+
+.tn-footer-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tn-footer-inner strong {
+    font: bold 11px Arial, sans-serif;
+    letter-spacing: .12em;
+}
+
+.tn-footer-inner p {
+    color: var(--tn-gold);
+    font-size: 13px;
+}
+
+.tn-footer-links {
+    display: flex;
+    gap: 22px;
+}
+
+.tn-footer-links a {
+    font: 10px Arial, sans-serif;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.tn-footer-links a:hover {
+    opacity: 1;
+}
+
+.tn-footer-motto {
+    font-size: 13px;
+    color: var(--tn-gold);
+}
+
+/* Formal section */
+
+.tn-statsordningen {
+    background: #EDE5D5;
+}
+
+.tn-formal-hero {
+    background: #E5DCCB;
+    border-bottom: 1px solid var(--tn-line);
+}
+
+.tn-formal-hero .tn-eyebrow {
+    color: var(--tn-crimson);
+}
+
+.tn-formal-hero h1 {
+    color: var(--tn-green);
+}
+
+.tn-formal-hero .tn-lead {
+    color: #4D554F;
+}
+
+.tn-institution-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 75px 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--tn-line);
+}
+
+.tn-institution-grid article {
+    background: #F1EBDD;
+    padding: 38px;
+}
+
+.tn-institution-number {
+    font: 12px Arial, sans-serif;
+    color: var(--tn-crimson);
+}
+
+.tn-institution-grid h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 17px 0;
+}
+
+.tn-institution-grid p {
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.tn-formal-statement {
+    background: var(--tn-green);
+    color: var(--tn-ivory);
+    padding: 75px 8vw;
+    text-align: center;
+}
+
+.tn-formal-statement .tn-eyebrow {
+    color: var(--tn-gold);
+}
+
+.tn-formal-quote {
+    max-width: 850px;
+    margin: 25px auto;
+    font-size: clamp(25px, 3.5vw, 38px);
+    line-height: 1.4;
+}
+
+.tn-next-panel--formal {
+    background: #E5DCCB;
+}
+
+.tn-law-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 5vw;
+}
+
+.tn-law-list > h2 {
+    font-size: 37px;
+    font-weight: normal;
+    margin: 12px 0 40px;
+}
+
+.tn-law-list article {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 23px 0;
+    border-top: 1px solid var(--tn-line);
+}
+
+.tn-law-list article > span {
+    font: 12px Arial, sans-serif;
+    color: var(--tn-crimson);
+    padding-top: 5px;
+}
+
+.tn-law-list h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.tn-law-list p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #505A53;
+}
+
+.tn-note--formal {
+    background: #E5DCCB;
+}
+
+.tn-law-hierarchy {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 75px 5vw;
+}
+
+.tn-law-hierarchy h2 {
+    font-size: 38px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.tn-section-intro {
+    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.tn-hierarchy-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tn-hierarchy-level {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 19px 25px;
+    background: #E4DCCB;
+    border-left: 3px solid var(--tn-crimson);
+}
+
+.tn-hierarchy-level > span {
+    font: 12px Arial, sans-serif;
+    color: var(--tn-crimson);
+}
+
+.tn-hierarchy-level div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tn-hierarchy-level strong {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.tn-hierarchy-level small {
+    font: 12px Arial, sans-serif;
+    color: var(--tn-muted);
+}
+
+.tn-level-two { margin-left: 3%; }
+.tn-level-three { margin-left: 6%; }
+.tn-level-four { margin-left: 9%; }
+.tn-level-five { margin-left: 12%; }
+
+.tn-institution-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 5vw 90px;
+}
+
+.tn-institution-detail article {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 50px;
+    padding: 42px 0;
+    border-top: 1px solid var(--tn-line);
+}
+
+.tn-institution-heading span {
+    font: 10px Arial, sans-serif;
+    letter-spacing: .14em;
+    color: var(--tn-crimson);
+}
+
+.tn-institution-heading h2 {
+    font-size: 31px;
+    font-weight: normal;
+    margin: 13px 0;
+}
+
+.tn-institution-body p {
+    margin-top: 0;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.tn-institution-body h3 {
+    margin: 25px 0 9px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .tn-header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .tn-main-nav {
+        width: 100%;
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    .tn-section-nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 24px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .tn-section-nav a {
+        white-space: nowrap;
+    }
+
+    .tn-intro-grid,
+    .tn-prose-grid,
+    .tn-next-panel {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .tn-facts {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tn-three-columns {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .tn-home-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .tn-institution-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tn-institution-detail article {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tn-footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tn-footer-links {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .tn-home-hero {
+        min-height: 500px;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    .tn-home-hero h1 {
+        font-size: 48px;
+    }
+
+    .tn-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .tn-fact {
+        padding: 12px 0 12px 16px;
+    }
+
+    .tn-feature {
+        padding: 28px;
+        min-height: 280px;
+    }
+
+    .tn-page-hero {
+        padding: 65px 7vw;
+    }
+
+    .tn-timeline-item {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+    }
+
+    .tn-level-two,
+    .tn-level-three,
+    .tn-level-four,
+    .tn-level-five {
+        margin-left: 0;
+    }
+
+    .tn-hierarchy-level {
+        padding: 17px 15px;
+    }
+}
+
+/* =========================================
+   TEUTONIA - NATIONAL FLAG
+   Moderate display dimensions
+   ========================================= */
+
+.tn-flag-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 1rem;
+}
+
+.tn-flag-figure {
+    width: min(100%, 260px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tn-flag-section .tn-national-flag {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    max-height: 145px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.tn-flag-figure figcaption {
+    margin-top: 0.65rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-align: center;
+}
+
+
+/* ==========================================================
+   TEUTONIA FLAG TRANSITION AND CODEX LAYOUT
+   ========================================================== */
+
+
+/* ------------------------------------------
+   STICKY NATIONAL HEADER
+   ------------------------------------------ */
+
+.tn-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow .35s ease;
+}
+
+.tn-header-inner {
+    transition: padding .4s ease;
+}
+
+
+/* ------------------------------------------
+   NATIONAL FLAG IN THE HEADER
+   ------------------------------------------ */
+
+.tn-brand-flag {
+    display: block;
+    width: 42px;
+    height: 28px;
+    flex: 0 0 auto;
+    object-fit: contain;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition:
+        width .45s ease,
+        height .45s ease,
+        opacity .35s ease,
+        transform .45s ease,
+        margin .45s ease;
+}
+
+/* Hide the small flag on the home page initially. */
+
+.tn-home .tn-brand-flag {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin-right: -13px;
+    transform: translateY(8px) scale(.65);
+}
+
+/* Reveal it after the large flag has scrolled away. */
+
+.tn-home.tn-scrolled .tn-brand-flag {
+    width: 42px;
+    height: 28px;
+    opacity: 1;
+    margin-right: 0;
+    transform: translateY(0) scale(1);
+}
+
+/* Compact the header slightly when scrolling. */
+
+.tn-home.tn-scrolled .tn-header-inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tn-home.tn-scrolled .tn-header {
+    box-shadow: 0 4px 18px rgba(0,0,0,.12);
+}
+
+
+/* ------------------------------------------
+   LARGE FLAG ON THE HOMEPAGE
+   ------------------------------------------ */
+
+.tn-flag-section {
+    max-height: 240px;
+    overflow: hidden;
+    transition:
+        max-height .65s ease,
+        padding .65s ease,
+        opacity .4s ease;
+}
+
+.tn-flag-figure {
+    animation: tn-flag-arrive 1.15s cubic-bezier(.2,.75,.25,1) both;
+    transform-origin: center center;
+}
+
+@keyframes tn-flag-arrive {
+
+    0% {
+        opacity: 0;
+        transform: translateY(25px) scale(1.55);
+    }
+
+    65% {
+        opacity: 1;
+        transform: translateY(-3px) scale(1.04);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+/* Hide the large flag when it reaches the sticky header. */
+
+.tn-home.tn-scrolled .tn-flag-section {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+}
+
+.tn-home.tn-scrolled .tn-flag-figure {
+    animation: none;
+}
+
+
+/* ------------------------------------------
+   CODEX DOCUMENT SECTION
+   ------------------------------------------ */
+
+.tn-codex-document {
+    max-width: 1000px;
+    margin: 65px auto 90px;
+    padding: 50px 5vw;
+    text-align: center;
+    background: #E5DCCB;
+    border-top: 1px solid rgba(23,45,42,.18);
+    border-bottom: 1px solid rgba(23,45,42,.18);
+}
+
+.tn-codex-document .tn-section-eyebrow {
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #A3262A;
+}
+
+.tn-codex-document h2 {
+    margin: 0 0 18px;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: normal;
+    color: #172D2A;
+}
+
+.tn-codex-document > p:not(.tn-section-eyebrow) {
+    max-width: 700px;
+    margin: 0 auto 24px;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #50564F;
+}
+
+.tn-codex-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 13px 24px;
+    background: #172D2A;
+    color: #E9E2D0 !important;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: .08em;
+    transition: background .25s ease;
+}
+
+.tn-codex-link:hover {
+    background: #A3262A;
+}
+
+
+/* ------------------------------------------
+   COLLAPSED PDF VIEWER
+   ------------------------------------------ */
+
+.tn-pdf-viewer {
+    max-width: 900px;
+    margin: 35px auto 0;
+    text-align: left;
+    border-top: 1px solid rgba(23,45,42,.2);
+    border-bottom: 1px solid rgba(23,45,42,.2);
+}
+
+.tn-pdf-viewer summary {
+    padding: 17px 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: .08em;
+    color: #172D2A;
+    list-style-position: inside;
+}
+
+.tn-pdf-viewer summary:hover {
+    color: #A3262A;
+}
+
+.tn-pdf-viewer iframe {
+    display: block;
+    width: 100%;
+    height: min(75vh, 850px);
+    margin: 0 auto 20px;
+    border: 1px solid rgba(23,45,42,.2);
+    border-radius: 2px;
+    background: white;
+}
+
+
+/* ------------------------------------------
+   ACCESSIBILITY
+   ------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .tn-flag-figure {
+        animation: none !important;
+    }
+
+    .tn-header,
+    .tn-header-inner,
+    .tn-brand-flag,
+    .tn-flag-section {
+        transition: none !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+
+}
+
+
+/* ------------------------------------------
+   MOBILE ADJUSTMENTS
+   ------------------------------------------ */
+
+@media (max-width: 800px) {
+
+    .tn-brand-flag {
+        width: 36px;
+        height: 24px;
+    }
+
+    .tn-home.tn-scrolled .tn-brand-flag {
+        width: 36px;
+        height: 24px;
+    }
+
+    .tn-codex-document {
+        margin: 40px 5vw 65px;
+        padding: 35px 6vw;
+    }
+
+}
+
